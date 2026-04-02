@@ -3,69 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anly - Twój asystent Discord</title>
+    <title>Anly - Twój serwer, Twoje zasady</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <div class="logo-container">
-            <img src="logo.png" alt="Anly Logo" class="nav-logo">
-            <div class="logo">Anly<span>.</span></div>
-        </div>
-        <div class="nav-right">
-            <div class="links">
-                <a href="#features">Funkcje</a>
-                <a href="#commands">Komendy</a>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Anly Logo" class="nav-logo">
+                <div class="logo">Anly<span>.</span></div>
             </div>
-            <button id="theme-toggle" class="theme-switch" title="Przełącz motyw">
-                <i class="fas fa-moon"></i>
-            </button>
-            <a href="https://discord.com/oauth2/authorize?client_id=1488879981236060311" class="btn-small">Dodaj bota</a>
+            <div class="nav-right">
+                <div class="links">
+                    <a href="#features">Możliwości</a>
+                    <a href="#commands">Komendy</a>
+                    <a href="https://discord.gg/e5uyeBZruK" target="_blank">Pomoc</a>
+                </div>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-switch" title="Zmień klimat">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="https://discord.com/oauth2/authorize?client_id=1488879981236060311&permissions=8&scope=bot%20applications.commands" class="btn-small">Zaproś mnie</a>
+                </div>
+            </div>
         </div>
     </nav>
 
     <header>
-        <div class="hero">
+        <div class="hero" data-aos="fade-up">
             <div class="hero-image-container">
                 <img src="logo.png" alt="Anly Bot" class="hero-logo">
             </div>
             
-            <div class="status-badge">● Online i gotowy do pomocy</div>
-            <h1>Poznaj <span>Anly</span></h1>
-            <p>Nowoczesny, szybki i estetyczny bot dla Twojej społeczności. Zarządzaj serwerem z klasą i lekkością dzięki zaawansowanej tarczy ochronnej.</p>
+            <div class="status-badge">● Działam i mam się świetnie</div>
+            <h1>Zróbmy razem coś <span>fajnego</span></h1>
+            <p>Anly to nie tylko bot. To Twoje wsparcie w pilnowaniu porządku, rozkręcaniu imprez muzycznych i szybkim pomaganiu użytkownikom. Prostota, która zachwyca.</p>
             
             <div class="hero-btns">
-                <a href="https://discord.com/oauth2/authorize?client_id=1488879981236060311" class="btn-primary"><i class="fab fa-discord"></i> Zaproś bota</a>
-                <a href="#features" class="btn-secondary">Zobacz funkcje</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1488879981236060311&permissions=8&scope=bot%20applications.commands" class="btn-primary"><i class="fab fa-discord"></i> Dodaj do serwera</a>
+                <a href="#features" class="btn-secondary">Sprawdź możliwości</a>
             </div>
         </div>
     </header>
 
     <section id="features" class="features">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <i class="fas fa-shield-halved"></i>
-            <h3>Bezpieczeństwo</h3>
-            <p>Inteligentna tarcza Anly automatycznie wykrywa i blokuje zagrożenia na Twoim serwerze.</p>
+            <h3>Bezpieczna przystań</h3>
+            <p>Oferuję ci łatwe narzędzia do pilnowania porządku serwera!.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-bolt"></i>
-            <h3>Szybkość</h3>
-            <p>Zbudowany na najnowszych technologiach, aby każda komenda działała natychmiastowo.</p>
+            <h3>Błyskawiczna reakcja</h3>
+            <p>Nie lubię czekać tak samo jak Ty. Odpowiadam na komendy szybciej, niż zdążysz mrugnąć :p</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-wand-magic-sparkles"></i>
-            <h3>Estetyka</h3>
-            <p>Piękne i czytelne wiadomości Embed, które idealnie pasują do Twojego serwera.</p>
+            <h3>Czysta estetyka</h3>
+            <p>Wygląd ma znaczenie. Moje wiadomości są przejrzyste i ładne.</p>
+        </div>
+    </section>
+
+<section id="commands" class="commands">
+        <h2 data-aos="fade-down">Poznaj moje <span>możliwości</span></h2>
+        
+        <div class="command-wrapper">
+            
+            <div class="command-group" data-aos="fade-right">
+                <h3><i class="fas fa-gavel"></i> Moderacja</h3>
+                <div class="command-grid">
+                    <div class="cmd-item">
+                        <code>/ban</code>
+                        <p>Permanentnie usuwa użytkownika z serwera.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/kick</code>
+                        <p>Wyrzuca użytkownika.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/clear</code>
+                        <p>Szybkie sprzątanie chatu z określonej liczby wiadomości.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="command-group" data-aos="fade-left">
+                <h3><i class="fas fa-music"></i> Muzyka</h3>
+                <div class="command-grid">
+                    <div class="cmd-item">
+                        <code>/graj</code>
+                        <p>Odtwarza utwór lub playlistę z linku/wyszukiwarki.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/kolejka</code>
+                        <p>Pokazuje listę utworów, które czekają na swoją kolej.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/pomin</code>
+                        <p>Głosowanie lub natychmiastowe przejście do kolejnego utworu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="command-group" data-aos="fade-right">
+                <h3><i class="fas fa-ticket-alt"></i> System Ticketów</h3>
+                <div class="command-grid">
+                    <div class="cmd-item">
+                        <code>/setup_tickets</code>
+                        <p>Tworzy interaktywny panel do otwierania zgłoszeń.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/zamknij</code>
+                        <p>Archiwizuje ticket i przenosi go do kategorii LOGS.</p>
+                    </div>
+                    <div class="cmd-item">
+                        <code>/dodaj</code>
+                        <p>Dodaje kolejnego użytkownika do istniejącego ticketu.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="support-section">
+        <div class="support-wrapper" data-aos="flip-up">
+            <div class="support-content">
+                <div class="support-icon-box">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="support-text">
+                    <h2>Potrzebujesz <span>pogadać</span>?</h2>
+                    <p>Coś nie działa? Masz pomysł na nową funkcję? Wpadnij na nasz serwer wsparcia. Czekamy na Ciebie!</p>
+                </div>
+                <div class="support-action">
+                    <a href="https://discord.gg/e5uyeBZruK" class="btn-support" target="_blank">
+                        Wbijaj do nas <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Anly Bot. Stworzone dla najlepszych społeczności.</p>
+        <p>&copy; 2026 Anly Bot. Stworzone z pasją dla Twojej społeczności.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init({ 
+            duration: 1000, 
+            once: false, 
+            mirror: true 
+        });
+
         const btn = document.getElementById("theme-toggle");
         const icon = btn.querySelector("i");
         const body = document.body;
@@ -78,7 +172,6 @@
         btn.addEventListener("click", () => {
             body.classList.toggle("dark-mode");
             const isDark = body.classList.contains("dark-mode");
-            
             if (isDark) {
                 icon.classList.replace("fa-moon", "fa-sun");
                 localStorage.setItem("theme", "dark");
